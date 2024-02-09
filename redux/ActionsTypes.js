@@ -1,0 +1,6 @@
+const AJOUTER="AJOUTER"
+const SHOW="SHOW"
+const ACHETER="ACHETER"
+const HIDE="HIDE"
+
+export {AJOUTER,ACHETER,SHOW,HIDE}

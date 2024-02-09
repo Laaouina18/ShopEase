@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 const CourseItem = ({ course }) => {
     return (
         <View style={{ flexDirection: 'column', alignItems: 'center', backgroundColor: '#F9F9F9', borderRadius: 10, marginBottom: 10, margin: 30 }}>
-            <Image source={{ uri: course.image }} style={{ width: '100%', height: 200, borderRadius: 10 }} resizeMode="cover" />
+            <Image source={{ uri: course.image }} style={{ width: '100%', height: 170, borderRadius: 10 }} resizeMode="cover" />
 
             
                 <Text style={{ fontWeight: 'bold', fontSize: 16 }}>{course.title}</Text>
