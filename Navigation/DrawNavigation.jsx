@@ -7,11 +7,12 @@ import Catalogue from "../screens/Catalogue";
 import Panier from "../screens/Panier";
 import Achats from "../screens/Achats";
 import Icon from 'react-native-vector-icons/FontAwesome';
+import Camera from "../screens/Camera";
 const DrawNavigation=()=>{
 
  const Drawer=createDrawerNavigator();
 	return(
- <NavigationContainer >
+
 	<Drawer.Navigator  
 	screenOptions={{headerTintColor:"white",headerStyle:{backgroundColor:"green"}}}>
 		<Drawer.Screen name="Catalogue" component={Catalogue} 
@@ -34,8 +35,14 @@ const DrawNavigation=()=>{
             )
           }}>
 		</Drawer.Screen>
+		<Drawer.Screen name="Camera"  component={Camera}
+		  options={{
+            drawerIcon: ({ color, size }) => (
+              <Icon name="shopping-cart" size={size} color="black" />
+            )
+          }}>
+		</Drawer.Screen>
 	</Drawer.Navigator>
- </NavigationContainer>
 	)
 }
 

@@ -1,14 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import DrawNavigation from './Navigation/DrawNavigation';
+import Navbar from './Navigation/Navbar';
 import { Provider } from 'react-redux';
 import store from './redux/Store';
- const App=()=> {
+
+const App = () => {
   return (
-	<Provider store={store}>
-		<DrawNavigation/>
-	</Provider>
+    <Provider store={store}>
+        <Navbar />
+    </Provider>
   );
 }
-export default App;
 
+export default App;
